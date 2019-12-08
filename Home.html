@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title> KKC Malaysia </title>
+	
+	<link href="CSS/kkc_layout.css" rel="stylesheet" type="text/css" />
+	<link href="CSS/slide_design.css" rel="stylesheet" type="text/css" />
+	<link href="CSS/animation.css" rel="stylesheet" type="text/css" />
+	<link href="CSS/button_styles.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="JS/slide.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<!--================ Header Area =================-->
+		<table id="header">
+			<tr>
+				<td class="logo" rowspan="2">
+				<a href="Home.html"><img  alt="logo" src="Resources/Head.jpeg" height="99" width="106" /></a>
+				</td>
+				<td class="signin" colspan="5">
+					<button id="play" class="btn_audio" onclick="playAud()" type="button"> Play </button>
+					<button id="pause" class="btn_audio" onclick="pauseAud()" type="button"> Pause </button>
+					
+					<audio id="myAudio" autoplay="autoplay" loop="loop">
+						<source src="Audio/SAO II OP Courage Full.m4a" type="audio/mp3" />
+					</audio>
+					<script type="text/javascript" src="JS/animation_button.js"></script>
+
+									
+					<a href="Member Login.html"> <img alt="sigin_button" src="Resources/HeadIcon.png" height="24" width="24" /> &nbsp; Sign in &nbsp; </a>
+				</td>
+			</tr>
+				
+			<tr>
+				<td class="title"><a href="Promotion.html">Promotion</a></td>
+				<td class="title"><a href="Menu.html">Menu</a></td>
+				<td class="title"><a href="Member Profile.html">Member Profile</a></td>
+				<td class="title"><a href="Contact Us.html">Contact Us</a></td>
+				<td class="title">
+					<div class="other">
+   						<label for="toggle"> &#9776; </label>   				
+						<input type="checkbox" id="toggle" />
+						
+	    	      		<div class="nav">
+	    	      			<a><img src="Resources/nav.png" alt="nav" /></a>
+	    	      			<a href="Payment.html"> Payment </a>
+	    	      			<a href="Receipt.html"> Receipt </a>
+	    	       			<a href="Add To Cart.html"> Add To Cart </a>
+	    	       			<a href="Catering.html"> Catering </a>
+	    	       			<a href="Delivery.html"> Delivery </a>
+	    	       			<a href="Track Order.html"> Track Order </a>
+	    	       			<a href="FAQ.html"><span> FAQ </span></a>
+	    	       			<a href="Birthday.html"><span> Birthday </span></a>
+	    	       			<a href="Job Application.html"><span> Job Application </span></a>
+	    	       		</div>
+	    	       	</div>
+				</td>
+			</tr>
+		</table>
+		<!--================ End of Header Area =================-->
+	
+		<!--================ Body Area =================-->
+		<div id="content">
+			
+			<blockquote><h3> Promotions </h3></blockquote>
+	
+			<div class="slide_container">
+				<input type="radio" name="images" id="i1" checked="checked" />
+				<input type="radio" name="images" id="i2" />
+				<input type="radio" name="images" id="i3" />
+				<input type="radio" name="images" id="i4" />
+	
+				<div class="slide_img" id="one">
+					<img src="Resources/Combo 6.png" />
+					
+					<label for="i3" class="prev"><span></span></label>
+					<label for="i2" class="nxt"><span></span></label>
+				</div>
+			
+				<div class="slide_img" id="two">
+					<img src="Resources/Combo 4.png" />
+			
+					<label for="i1" class="prev"><span></span></label>
+					<label for="i3" class="nxt"><span></span></label>
+				</div>
+	
+				<div class="slide_img" id="three">
+					<img src="Resources/Combo 2.png" />
+			
+					<label for="i2" class="prev"><span></span></label>
+					<label for="i4" class="nxt"><span></span></label>
+				</div>
+		
+				<div class="slide_img" id="four">
+					<img src="Resources/Combo 1.png" />
+			
+					<label for="i3" class="prev"><span></span></label>
+					<label for="i1" class="nxt"><span></span></label>
+				</div>
+
+				<div class="slide_nav">
+					<label class="slide_dots" id="dot1" for="i1"></label>
+					<label class="slide_dots" id="dot2" for="i2"></label>
+					<label class="slide_dots" id="dot3" for="i3"></label>
+					<label class="slide_dots" id="dot4" for="i4"></label>
+				</div> 
+			</div>
+			
+			<div class="mustTry">
+				<blockquote>
+					<h3> Must Try </h3>
+					<h2> Hot Sales </h2>
+					<div>
+						<a href="Products Description/Product 1.html"><img src="Resources/Combo 1.png" align="left" alt="Combo 1" height="200" width="200" /></a>
+						<ul>
+							<li><b> Combo 1 : Kirito </b></li>
+							<li>RM 12.90</li>
+						</ul>
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					</div>
+			
+					<br/>
+			
+					<div>
+						<a href="Products Description/Product 2.html">
+							<img src="Resources/Combo 2.png" align="left" alt="Combo 2" height="200" width="200" />
+						</a>
+						
+						<ul>
+							<li><b> Combo 2 : Asuna </b></li>
+							<li>RM 12.90</li>
+						</ul>
+					
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					</div>
+				
+					<br/>
+							
+					<div>
+						<a href="Products Description/Product 3.html"><img src="Resources/Combo 3.png" align="left" alt="Combo 1" height="200" width="200" /></a>
+						<ul>
+							<li><b> Combo 3 : Sinon </b></li>
+							<li>RM 15.90</li>
+						</ul>
+					
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					</div>
+				
+				
+				
+					<h3> Sponsored by <a href="https://en.wikipedia.org/wiki/ASCII_Media_Works"> ASCII Media Works </a> </h3>
+				
+				</blockquote>
+				
+				<div class="video">
+				   <video autoplay="autoplay" controls="controls">
+						<source src="Video/Sword Art Online - Kirito vs. The Gleam Eyes.mp4" type="video/mp4" />
+						<p>This browser does not support the video element.</p>
+					</video>
+				</div>
+				
+			</div>	
+		</div>
+		<!--================ End of Body Area =================-->
+	
+		<br/><br/><br/><br/><br/>
+	
+		<footer>
+			<div> Copyright &copy; 2019 KKC Malaysia &#9832; </div>
+		</footer>
+		
+	</div>
+	<!--================ End of Content =================-->
+</body>
+
+</html>

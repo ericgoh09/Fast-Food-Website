@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title> Catering </title>
+	
+	<link href="CSS/kkc_layout.css" rel="stylesheet" type="text/css" />
+	<link href="CSS/button_styles.css" rel="stylesheet" type="text/css" />
+		
+	<script type="text/javascript" src="JS/functions.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<!--================ Header Area =================-->
+		<table id="header">
+			<tr>
+				<td class="logo" rowspan="2">
+				<a href="Home.html"><img  alt="logo" src="Resources/Head.jpeg" height="99" width="106" /></a>
+				</td>
+				<td class="signin" style="text-align: right" colspan="5">
+					<button id="play" class="btn_audio" onclick="playAud()" type="button"> Play </button>
+					<button id="pause" class="btn_audio" onclick="pauseAud()" type="button"> Pause </button>
+					
+					<audio id="myAudio" autoplay="autoplay" loop="loop">
+						<source src="Audio/SAO II OP Courage Full.m4a" type="audio/mp3" />
+					</audio>
+					<script type="text/javascript" src="JS/animation_button.js"></script>
+
+									
+					<a href="Member Login.html"> <img alt="sigin_button" src="Resources/HeadIcon.png" height="24" width="24" /> &nbsp; Sign in &nbsp; </a>
+				</td>
+			</tr>
+				
+			<tr>
+				<td class="title"><a href="Promotion.html">Promotion</a></td>
+				<td class="title"><a href="Menu.html">Menu</a></td>
+				<td class="title"><a href="Member Profile.html">Member Profile</a></td>
+				<td class="title"><a href="Contact Us.html">Contact Us</a></td>
+				<td class="title">
+					<div class="other">
+   						<label for="toggle"> &#9776; </label>   				
+						<input type="checkbox" id="toggle" />
+						
+	    	      		<div class="nav">
+	    	      			<a><img src="Resources/nav.png" alt="nav" /></a>
+	    	      			<a href="Payment.html"> Payment </a>
+	    	      			<a href="Receipt.html"> Receipt </a>
+	    	       			<a href="Add To Cart.html"> Add To Cart </a>
+	    	       			<a href="Catering.html"> Catering </a>
+	    	       			<a href="Delivery.html"> Delivery </a>
+	    	       			<a href="Track Order.html"> Track Order </a>
+	    	       			<a href="FAQ.html"><span> FAQ </span></a>
+	    	       			<a href="Birthday.html"><span> Birthday </span></a>
+	    	       			<a href="Job Application.html"><span> Job Application </span></a>
+	    	       		</div>
+	    	       	</div>
+				</td>
+			</tr>
+		</table>
+		<!--================ End of Header Area =================-->
+		
+		<blockquote>
+			<h3>Catering</h3>
+			
+			<div>
+				<form>
+					<div>
+						<label for="event">Event</label>
+						<select name="event type" id="event">
+							<option value="event1">Birthday</option>
+							<option value="event2">Food Tasting</option>
+							<option value="event3">Private Parties</option>
+						</select> 
+					</div>
+					
+					<div>
+						<label for="event date">Date of Event</label>
+						<input name="event date" id="event date" type="date" />
+					</div>
+					
+					<div>
+						<label for="event time1">Time of Event</label>
+						<input name="event time1" id="event time1" type="time" />-
+						<input name="event time2" id="event time2" type="time" />
+					</div>
+					
+					<div>
+						<label for="name">Name*</label>
+						<input name="name" id="name" type="text" />
+					</div>
+					
+					<div>
+						<label for="Phone1">Phone Number#1</label>
+						<input name="Phone1" id="Phone1" type="tel" />
+					</div>
+					
+					<div>
+						<label for="Phone2">Phone Number#2</label>
+						<input name="Phone2" id="Phone2" type="tel" />
+					</div>
+					
+					<div>
+						<label for="email">E-mail</label>
+						<input name="email" id="email" type="text" placeholder="xxxx@xxxx.com" />
+					</div>
+					
+					<div>
+						<label for="street address">Street Address</label>
+						<input name="street address" id="street address" type="text" />
+					</div>
+					
+					<div>
+						<label for="city">City</label>
+						<input name="city" id="city" type="text" />
+					</div>
+					
+					<div>
+						<label for="state">State</label>
+						<input name="state" id="state" type="text" />
+					</div>
+					
+					<div>
+						<label for="postal code">Postal Code</label>
+						<input name="postal code" id="postal code" type="text" />
+					</div>
+					
+					<div>
+						<label for="package">Package</label>
+						<select name="package type" id="package">
+							<option value="nothing">--default--</option>
+							<option value="package1">Package 1.Kirito + Asuna </option>
+							<option value="package2">Package 2 Kirito + Sinon </option>
+							<option value="package3">Package 3 Kirito + Leafa </option>
+						</select> 
+					</div>
+					
+					<div>
+						<label for="qty">Quantity</label>
+						<input name="qty" id="qty" type="number" />
+						<p>Each package not less than 100</p>
+					</div>
+					
+					<div class="btn_style3">
+						<input type="button" value="Submit" onclick="mySubmit()" />
+					</div>
+				</form>
+			</div>
+			
+			<div>
+				<p>Hotline-<a class="link-underline" href="tel:1300222888" gtm-label="faq.tel">1300-222-888</a></p>
+			</div>
+		
+		</blockquote>
+		
+		<br/><br/><br/><br/><br/>
+		<br/><br/><br/><br/><br/>
+		
+		<footer>
+			<div> Copyright &copy; 2019 KKC Malaysia &#9832; </div>
+		</footer>
+		
+	</div>
+</body>
+
+</html>
