@@ -1,0 +1,12 @@
+﻿.video {
+	margin: auto;
+	position: relative;
+	width: 80%;
+}
+
+div video {
+	border: 3px solid blue;
+	box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
+	width: 800px;
+	height: 450px;
+}

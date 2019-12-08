@@ -1,0 +1,210 @@
+﻿html {
+	font-family: "Comic Sans MS";
+	background-color: #92ad57;
+	background-image: url('../Resources/background.jpg');
+	min-width: 800px;
+	min-height: 600px;
+	font-size: large;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	max-width: 1020px;
+	background-color: aqua;
+	border-left: 3px solid gray;
+	border-right: 3px solid gray;
+	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+}
+
+footer {
+	clear: both;
+	bottom: 0;
+	width: 90%;
+	min-width: 0;
+	max-width: 1020px;
+	position: fixed;
+	text-align: center;
+	background-color: #999999;
+	color: #006699;
+	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-family: fantasy;
+	font-size: xx-large;
+	color: purple;
+}
+
+div {
+	width: 100%;
+}
+
+label {
+	display: inline-block;
+	width: 160px;
+}
+
+span {
+	color: #53d17A;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h2, h3 {
+	font-family: cursive;
+}
+
+h2 {
+	color: red;
+}
+
+h3 {
+	color: #9933FF;
+}
+
+.content {
+	z-index: 99;
+}
+
+.logo {
+	background-color:white;
+	border: 1px powderblue solid;
+}
+
+.title {
+	width:14%;
+	height: 70%;
+	background-color: #0033CC;
+	border: 1px powderblue solid;
+}
+
+.other {
+	height: 70px;
+	line-height: 70px;
+	background-color: red;
+	border-bottom: 1px solid blue;
+	text-align: right;
+}
+
+.other label {
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: block;
+	width: 26px;
+	float: right;
+	cursor: pointer;
+}
+
+.nav {
+	display: none;
+	top: 100%;
+	width: 100%;
+	position: relative;
+	margin: 0 30px 0 0;
+	background-color: red;
+	text-align: center;
+	
+}
+
+.nav img {
+	width: 100px;
+	height: 70px;
+}
+
+.nav a {
+	display: block;
+	border-bottom: 1px solid #EAEAEB;
+	text-decoration: none;
+	color: white;
+	margin: 0;
+	line-height: 70px;
+
+}
+
+.menu div {
+	clear: both;
+	width: 60%;
+}
+
+.menu img {
+	width: 200px;
+	height: 200px;
+}
+
+.promotion div {
+	clear: both;
+}
+
+.promotion img {
+	float: left;
+	width: 300px;
+	height: 300px;
+}
+
+.receipt {
+	width: 100%;
+}
+
+.signin:not(audio) {
+	border: px black solid;
+	width:14%;
+	background-color:red;
+	height: 30%;
+	text-align: right;
+}
+
+.mustTry blockquote div {
+	clear: both;
+	border: 1px gray solid;
+	width: 60%;
+}
+
+.tb_AddCart {
+	width: 100%;
+}
+
+#header {
+	width:100%;
+	height:100px;
+	text-align:center;
+	background-color: aqua;
+	border: 1px black solid;
+}
+
+#header a {
+	color: white;
+}
+
+#content {
+	top: 0;
+	height: 100%;
+	z-index: 1;
+}
+
+#toggle:checked + .nav {
+	display: block;
+	z-index: 9;
+}
+
+#toggle {
+	display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+	footer {
+		width: 100%;
+	}
+}
